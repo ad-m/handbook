@@ -1,6 +1,6 @@
 # What is this about?
 
-When you join the company (after successfully completing trial period), we need to bring you up to our level, or maybe you need to bring us to your level.
+When you join the company (after successfully completing evaluation period), we need to bring you up to our level, or maybe you need to bring us to your level.
 ;) We believe that the best way to make sure we're on the same page is to show you some videos and articles, so here they are.
 Bill the time spent doing this to `RT / onboarding`.
 Please put the title of the video or article into the work subject note.
@@ -9,13 +9,14 @@ You don't need to see all of it in one go.
 You're free to adjust your pace to the speed of your initial transition into the project.
 If the transition is quick (you do lots of coding on your first day), slow it down and watch some training material every day.
 If the transition is slow due to questions, timezones, environment issues, and other blocking problems, then report those and watch some training material.
+Each link is followed by rough estimate of how much time read/watch takes to help with planning minimum time required for consuming particular learning material.
 
-You are expected to watch or read everything that matches your position within two weeks from starting the work with the company (after trial period is finished completely).
+You are expected to watch or read everything that matches your position within two weeks from starting the work with the company (after evaluation period is finished completely).
 
-# Trial candidates
+# Evaluation period candidates
 
-This section is for the trial candidates in the second of three stages of the trial (after 567 and IoT db design have been checked and the paper version of the legal agreement has started to be processed).
-The rest of the sections are meant for after-trial staff.
+This section is for the evaluation period candidates in the 2nd stage of the Evaluation period (after Evaluation tasks 1-3).
+The rest of the sections are meant for after-evaluation staff.
 
 - <https://youtu.be/ZQUxL4Jm1Lo> - What is imposter syndrome and how can you combat it?
   (5 min video);
@@ -34,23 +35,21 @@ The rest of the sections are meant for after-trial staff.
 
 - <https://www.datadriveninvestor.com/2018/05/17/5-things-every-developer-must-know-about-intellectual-property-rights/#> - 5 Things Every Developer Must Know about Intellectual Property Rights (2 min read);
 
-- <https://management30.com/practice/celebration-grids/> - Celebration grid - Celebrate Learnings with Management 3.0 (6 min video);
-
-- <https://medium.com/@tadeumarinho/identifying-learning-from-problems-and-successes-with-celebration-grid-3b38244f07e9> - Celebration grid (5 min read);
-
 # All staff
 
-- <https://youtu.be/n7wH2XdOWpM> - AgileByExample 2016:
-  Henrik Kniberg - Keynote - Focus (or Stop Starting, Start Finishing) (44 min video);
-- <https://hbr.org/1999/11/management-time-whos-got-the-monkey> - "Management Time:
-  Who’s Got the Monkey?"
-  by William Oncken, Jr.Donald L. Wass (1974) (11 min read);
+For all staff _except_ those on evaluation / trial / training period.
+
+All of the items from "Evaluation period candidates" section, plus:
+
 - <http://randsinrepose.com/archives/be-unfailingly-kind/> - a 100% effective guide on how to work efficiently with people when you have no power over them (6 min read);
 - <https://youtu.be/eYMz-VOw4r8> - James Priest - Agile, decentralized Learning Organizations With Sociocracy 3.0 (BTW when he mentions the startup sitting at the front, that actually was our team, taking most of the front row) (30 min video);
 - <https://www.linkedin.com/pulse/77-elements-sociocracy-30-ewa-koprowska/> - Ewa Koprowska - 77 Elements of Sociocracy 3.0;
 - <https://www.ted.com/talks/derek_sivers_how_to_start_a_movement> - Derek Sivers - How to start a movement (3 min video);
 - <https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are> - this explains what cortisol is (21 min video);
 - <https://risk-engineering.org/concept/Rasmussen-practical-drift> - this explains a fairly critical viewpoint on the erosion of procedures;
+
+- <https://management30.com/practice/celebration-grids/> - Celebration grid - Celebrate Learnings with Management 3.0 (6 min video);
+- <https://medium.com/@tadeumarinho/identifying-learning-from-problems-and-successes-with-celebration-grid-3b38244f07e9> - Celebration grid (5 min read);
 
 # All staff that has anything to do with software development
 
@@ -65,6 +64,7 @@ The rest of the sections are meant for after-trial staff.
 - <https://youtu.be/502ILHjX9EE> - Henrik Kniberg - Agile Product Ownership in a Nutshell (16 min video);
 - <https://threader.app/thread/1376985854229504007> - This is a story about how I lost $10,000,000 by doing something stupid
 - <https://hbr-org.cdn.ampproject.org/c/s/hbr.org/amp/2016/12/if-your-boss-could-do-your-job-youre-more-likely-to-be-happy-at-work> - If Your Boss Could Do Your Job, You’re More Likely to Be Happy at Work
+- <https://youtube.com/watch?v=I2G3OftfsfA> - Developer vs Engineer mindset
 
 ## Business travel
 
@@ -76,7 +76,7 @@ For now, you can skip it, but read it before you go on your first business trip:
 (coders, sysops, devops etc - people who primarily work with machines)
 
 - <http://http.jameshfisher.com/2019/05/26/i-can-see-your-local-web-servers/> - on "localhost" servers;
-- how to convert a putty key from a customer to id_rsa:
+- how to convert a putty key from a customer to id\_rsa:
   <https://askubuntu.com/a/584631> (you don't need to read it - just know it is here if you ever have to use it);
 
 ## Developers
@@ -97,8 +97,9 @@ If it does, watch it all.
   \- The Testivus Answer;
 - <http://www.leanessays.com/2019/04/what-if-your-team-wrote-code-for-737.html?m=1> - on the difference between coders/programmers and developers/engineers
 - <https://blog.ploeh.dk/2020/10/05/fortunately-i-dont-squash-my-commits/> - good reason to not squash commits
-- <https://www.divio.com/blog/documentation/> basic knowledge of software documentation structure
-
+- <https://www.divio.com/blog/documentation/> - basic knowledge of software documentation structure
+- <https://bessey.dev/blog/2024/05/24/why-im-over-graphql/> - why not graphql
+- 
 #### all junior developers
 
 - <https://git-scm.com/book/> - how to git;
@@ -159,7 +160,8 @@ If it does, watch it all.
 - <https://github.com/hankhank10/false-positive-malware-reporting> - How to stop antivirus software flagging your Python application as malware
 - <https://www.crunchydata.com/blog/postgres-indexing-when-does-brin-win> - Postgres Indexing:
   When Does BRIN Win?
-- <https://www.cybertec-postgresql.com/en/column-order-in-postgresql-does-matter/> - Column order in PostgreSQL does matter
+- <https://www.cybertec-postgresql.com/en/column-order-in-postgresql-does-matter/> - Column order in PostgreSQL does impact reading speed
+- <https://r.ena.to/blog/optimizing-postgres-table-layout-for-maximum-efficiency/> - Column order in PostgreSQL impacts table size, index size and performance
 
 ### all python developers
 
@@ -185,6 +187,7 @@ If it does, watch it all.
 - <https://realpython.com/python38-new-features/> - cool new features in Python 3.8;
 - <https://realpython.com/python39-new-features/> - cool new features in Python 3.9;
 - <https://pypi.org/project/django-test-migrations/> - handling migration testing in Django (don't write it yourself);
+- <https://jcristharif.com/msgspec/benchmarks.html> - how to do json encoding/decoding but quickly
 
 Why pathlib is fun:
 
@@ -247,6 +250,7 @@ WindowsPath('C:/Windows/system')
 - ijson.backends.yajl2\_c - iterative json parser capable of going through a 0.5TB json, maybe use cython to run it quickly.
 - <https://www.dabeaz.com/python/UnderstandingGIL.pdf> - GIL War
 - <https://tenthousandmeters.com/blog/python-behind-the-scenes-13-the-gil-and-its-effects-on-python-multithreading/> - state of the GIL in 2021
+- <https://www.linkedin.com/posts/danilovmy_euro-python-2023-ended-today-i-had-a-great-activity-7088241937048047616-4VJ-/> - generators look nice but decrease performance due to context switching
 
 ### junior quality assurance engineers
 
@@ -277,8 +281,6 @@ WindowsPath('C:/Windows/system')
 - <https://youtu.be/kKj4FA5EY5Q> - Simon Sinek:
   The Problem Does Not Equal the Person (3 min video);
 
-(3 min video);
-
 ## Managers
 
 - <https://youtu.be/yIPbE7BssOs> - Randall Koutnik:
@@ -306,6 +308,7 @@ WindowsPath('C:/Windows/system')
 - <http://randsinrepose.com/archives/technicality/> - Michael Lopp - Technicality
 - <https://richmironov.medium.com/the-risks-of-replatforming-dbdc1de3a69d> - Rich Mironov:
   The Risks of Replatforming
+- <https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756> - Patrick M. Lencion - The Five Dysfunctions of a Team
 
 ## Lean project managers
 

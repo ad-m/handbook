@@ -50,6 +50,21 @@ The reason why is that we want to focus on the creation of software and not on a
 
 We will not accept a project targeted to manipulate people, to rip people off, or put their savings at risk, such as insurance+retirement funds.
 
+## Hourly Commitment and Core Staff Membership
+
+We trust our core staff to self-organize their work hours, in a way fostering a reliable and productive work environment that enables us to consistently meet our obligations to our clients.
+To ensure this, the core staff membership is considered optional and conditioned on meeting committed work hours.
+Membership is required to participate in the weekly status calls, S3 meetings, and Sociocracy sessions.
+
+### Daily and Weekly Commitments
+
+- **Expected Daily Commitment**: a minimum of 6 hours per working day, on average (excluding days off).
+- **Weekly Commitment**: To maintain core staff membership, you must work at least 90% of your weekly committed hours.
+
+Failing Weekly Commitment for two consecutive weeks, you will lose your core staff membership until you meet your Weekly Commitment.
+Losing core staff membership does not remove you from Slack channels.
+If you lose core staff membership, you can still participate in S3 meetings by bringing a driver.
+
 ## Workspace safety / security
 
 The relatively high security level we maintain allows us to work for financial institutions and, in general, institutions that treat their security seriously.
@@ -61,25 +76,33 @@ The manager looked at the engineer and was not happy.
 
 UPDATE: A fully encrypted laptop of our senior developer has been stolen from his bag while he was on a train, returning from a conference in late 2017. Spooky.
 
-### Encryption
+### Storage Encryption and Secure Work Environment
 
-All data related to the company and clients must be either stored in the cloud (Google Drive/Docs/Sheets in the company domain) or on encrypted media (encrypted volume or drive), unless the data in question is worthless or public.
+All data pertaining to the company and its clients must be either stored in the cloud (specifically, Google Drive/Docs/Sheets within the company domain) or on encrypted media (an encrypted volume or drive).
+This excludes data categorized as being of no value or already publicly available.
 
-EDIT: We are getting a lot of questions about who this applies to, so let's make it clear:
-everyone except:
+In addition, developers (after 2nd stage of Evaluation period i.e. before working on our clients' code base) are required to set up a Secure Work Environment on their workstations.
+As not to slow down 1st stage of Evaluation period, please refrain from setting it up before you get clear signal, that your next task will require you to work with private Client data.
+This is both for additional security and improved focus.
 
-- software developers in the first phase of the trial period (where they work on fake/mock data)
-- software developers who work exclusively on open-source projects (that only happened twice, though)
+Setting up Storage Encryption might initially appear daunting, but rest assured that it is fairly straightforward process.
+Our top recommendation is Full Disk Encryption (FDE), a method that encrypts the entire disk for comprehensive protection.
+Our second recommendation is Volume Encryption, a method that encrypts only the volume (/folder) where sensitive data is stored.
+Due to its ease of use, we recommend VeraCrypt by default, for which a simple tutorial can be found [here](https://github.com/reef-technologies/handbook/blob/master/docs/VeraCrypt.md).
+If you want to learn more about available options, please refer to the [Storage Encryption](docs/Storage_Encryption.md) document.
 
-So all staff, including virtual assistants, must have encrypted devices.
-Now that might sound scary, but these days setting up encryption is not that hard - in fact, instructions are provided in this document.
+So to sum it up:
 
-Typically, source code is inside a virtual machine which has its image stored on an encrypted volume, but dual boot with full disk encryption is also allowed.
-This practice prevents potential data leaks, i.e., if your computer gets stolen.
+- Software Developers **after** completing 2nd stage of Evaluation period (i.e. are about to work with Clients' code) are required to set up [Secure Work Environment](docs/Developer_environment_setup.md#ensure-you-have-a-secure-work-environment) on their workstations.
+- All other roles (e.g. Virtual Assistants) are required to use [Storage Encryption](docs/Storage_Encryption.md).
 
-You should already have an email account in the reef.pl domain.
-If you qualify for encryption, only ever use this email address (and the associated accounts) on a secure environment (VM/dual boot) - this way, your private and work accounts will never mix access or customer data.
-Docker containers containing client code won't be reachable from the system you use privately.
+### Mobile devices
+
+If you plan to connect your mobile device to any work-related accounts, first make sure:
+
+- your device is password-protected - i.e. has a passcode or a biometric lock
+- is encrypted - modern Apple and Android 10+ devices support encryption, but older devices or ones without configured passcode might not
+- is actively supported - i.e. receive regular security updates (check last update date in system settings and with your device provider)
 
 ### 2FA
 
@@ -119,15 +142,13 @@ We employ several techniques to output a lot of value in a unit of time:
    This drives many of our actions, including good communication with the client who knows what must be done.
    While some software houses lose \~30% of their performance (due to miscommunications, etc.), we stay way below 1% (the exact number is hard to measure when the amount of waste is so low).
 9. Use modern IDEs.
-10. Use LLMs (ChatGPT, GitHub Copilot, Amazon CodeWhisperer, etc.).
+10. Use LLMs (ChatGPT, GitHub Copilot, etc.).
 
 # Time-tracking
 
 This guide will show how to set up a time tracking app.
 
-It is not needed for recruitment assignments, unless specified otherwise.
-
-It is needed for trial period assignments.
+It is needed for Evaluation period assignments.
 
 ## Sign in to your new email account
 
@@ -135,11 +156,6 @@ The first step you need to take is to sign in to your new Google account at `ree
 All the necessary information, including credentials, have been sent to your personal email address.
 
 **Caution!**
-
-If you qualify for an encrypted VM, you should sign in for the first time from the host computer, as it is necessary to install the time-tracking application.
-This is the one and only situation when you are allowed to log in from your host machine.
-
-**Caution, again!**
 
 You have to set up 2-factor authentication within 24 hours from the first successful login, or the security policy will cut you off.
 It's best to set it up right after you perform the initial login.
@@ -151,7 +167,6 @@ Please do not forget :)
 We use an application that measures the time you spend at work and takes regular screenshots.
 The first step in preparing your work environment is to install it.
 
-To avoid any issues with screenshot-grabbing and keep consistency across users, please install the tracker on your ***host*** machine.
 Please install it and then accept the invitation that you received on your email address.
 
 You can download the application here:
@@ -179,7 +194,7 @@ The descriptions tell you where you should bill your RT time on Hubstaff.
 RT generally means "investment", RTO generally means "operations".
 
 | Project                                  | Description                                                                                                                                                                                                                                             |
-| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ---------------------------------------- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | RT / content marketing                   | Write articles or blog posts under the company name and present the company to the outside world.                                                                                                                                                       |
 | RT / django cookiecutter template        | Develop our internal Django template.                                                                                                                                                                                                                   |
 | RTO / internal infrastructure management | Manage workspace setup, including creating encrypted partitions, installing virtual machines, and installing software **not tied to specific projects**. If it's related to any internal or external project then please bill the time on that project. |
@@ -190,10 +205,11 @@ RT generally means "investment", RTO generally means "operations".
 | RTO / sales                              | any pre-work needed to be done **before** the contract is signed with a client                                                                                                                                                                          |
 | RTO / nurturing client relationship      | Discuss upcoming projects with existing clients OR, theoretically, after-sales support on a fixed price project (we haven't had any since like 2019 and the guarantee expired already on these).                                                        |
 | RTO / recruitment                        | Actively recruit other people.                                                                                                                                                                                                                          |
+| RTO / trial period                       | First stage of the Evaluation period, including status call and S3 participation, but not including internal development in second stage and real client tasks in third stage.                                                                          |
 | RT / recruitment                         | Improve the recruitment process.                                                                                                                                                                                                                        |
 | RTO / sociocracy meeting                 | Participate in sociocracy meetings and engage in related discussions on the channel.                                                                                                                                                                    |
 | RT / sociocracy development              | Contribute to sociocracy development as a tuner.                                                                                                                                                                                                        |
-| RTO / status call                        | Attend weekly RT status calls.                                                                                                                                                                                                                          |
+| RTO / status call                        | Weekly status calls. Please toggle between this and client-specific projects during the duration of the call dedicated to the status of the project you are explicitly assigned to.                                                                              |
 | RT / special assignment from CEO         | Work on special assignments from the CEO as specifically requested. Extremely rare. Typically used to do something that must be done where we don't want to create a new project for a one-time thing.                                                  |
 | RTO / onboarding                         | Go through training materials during the onboarding phase ([training](training.md)).                                                                                                                                                                    |
 | OTHER / just-in-case                     | Work on a project before being officially assigned to it (if needed). Notify management to re-bill the time later to the appropriate project.                                                                                                           |
@@ -218,6 +234,11 @@ Using Hubstaff TODOs only takes seconds to get right, and there are a few reason
 4. Sometimes a client decides to start a new company after something we've built becomes a success, and in order to properly settle the development costs between the old client company and the new client company, we need to be able to make a report out of it.
 5. In Poland, in some tax accounting modes, there are different rates for development phases such as design, implementation, sysadmin work, and coordination.
    Billing a feature and its development phase allows you to pay the proper taxes properly.
+
+When working on a Jira issue, prefix the TODO with the Jira issue key.
+The issue key should be in ALL CAPS.
+For example, if the Jira issue key is `RT-12`, then the TODO becomes:
+`RT-12 some text describing the TODO`.
 
 ## Why we use a time tracker
 
@@ -282,8 +303,52 @@ As of writing this, the number of times the tracker was instrumental in preventi
 UPDATE: this counter stopped incrementing in mid-2018 when we changed the target client group.
 It seems that "better" clients don't really care about the time, but they do care about results.
 The CEO even wanted to disable the screenshot feature of the tracker in early 2020, but others said they use it to inspect their own diary at the end of the day, and after a short discussion, everyone said they don't really care about it, so we just left it as it was.
+
 It seems that nobody has reviewed a screenshot since July 2018, except for people reviewing their own thing at the end of the day.
 Being able to easily recover from a situation where you have accidentally billed a client for doing something private (as you forgot to pause the timer) is nice and in line with the company values.
+
+Some candidates feel uncomfortable with a 3rd party application collecting screenshots, and we are willing to accommodate that.
+If a fitting candidate is unhappy with the current setup, we'll invest time into creating a custom solution that would keep the employee in control of the screenshots.
+This could be done using encryption with the employee's key or uploading to private buckets - the exact details will be decided once (and if) we need it.
+
+# Time management system (TiMaS)
+
+TIMAS is a tool that supports monitoring work efficiency and the mood and attitude of employees. Here are the main functions of this tool:
+
+## Workday Evaluation
+
+TIMAS integrates with Hubstaff, a time tracking tool, gathering information about time spent on tasks and breaks. It assesses work efficiency based on collected data, marking it green when the work is effective (uninterrupted, long-lasting) or yellow when it is ineffective (short, with long breaks).
+
+Each employee determines their planned availability and expected working hours in Jira (e.g. 6 hours daily). TIMAS evaluates the effectiveness of the day, marking it as green when a minimum of 70% of the planned working time has been worked per day. If you finish your work after midnight, TIMAS counts as the same day, as long as you finish before 3am.
+
+For the entire month to be green, a minimum of 75% of working days should be effective. That means you can still get a green month, even with about 5 red days. Days off, holidays, and non-working weekends are excluded from the calculation.
+
+We use this tool to observe our work focus - it helps us improve :)
+
+## Mood Evaluation
+TIMAS is also used to assess the daily well-being of employees. In the upper right corner, there are three 5-star scales where the employee evaluates their subjective feelings regarding:
+
+💻 Work Mood - How do you rate your working day? How was your work experience? If your work mood was extremely low today, mark the red star. Conversely, if it was positive, select the green star.
+
+🏠 Personal Life Mood - How did you feel about your private life today? Was anything affecting your mood?  If you had an extremely challenging day personally, mark the red star. If you're feeling great, like a star, choose the green one. 🙂
+
+😖 Pressure - Reflect on how you feel about your tasks. If you're feeling extremely overwhelmed, mark the red star on the right. If you're bored and feel your tasks aren’t challenging, mark the star on the left. If the amount of your tasks feels just right, the default green star in the middle is your go-to.
+
+Text box - add a comment if there is something you want to share (optional).
+
+When marking the stars, be honest! Both green, yellow and red marks are valuable information for the company about the condition of its employees.  Our goal is to observe and detect problems quickly enough and help you return to well-being.
+
+## Where is TIMAS?
+
+Visit the [website](https://timas.reef.pl), and you'll first see an almost white page. Log in with your Gmail account and enter “timas.reef.pl” into the search bar again to access your TIMAS account. Save TIMAS in your browser bookmarks and visit the site daily to note your mood and observe the work focus time.
+
+After registering on TIMAS website, you will also be able to install Slack TIMAS app - just click "Add apps" in left panel's "Apps" section and select "Timas". It will allow you to mark your mood directly from Slack, but only for current day.
+
+## What if I forget to mark stars?
+
+Scroll down on the website and you will see the “Your mood in the past” section. Here you can mark missing stars. Changes are saved automatically.
+
+If Mood Evaluation is not filled in for a whole week during which you worked you will be invited on a video call to check if everything is okay.
 
 # Configuring the environment
 
@@ -293,115 +358,27 @@ This guide will show how to set up a standard, secure environment for software d
 The handbook is written with Ubuntu-based distros (e.g. [Linux Mint](https://www.linuxmint.com/download.php)) in mind.
 Using such will help save time, but in the end, it is individual's responsibility to maintain a productive working environment.
 
-**Fully secured environment as described by this document is not needed for recruitment assignments.**
+**Fully secured environment as described by this document is not needed for initial Trial tasks.**
 
-It is needed for 2nd stage trial period assignments.
+It is needed beyond 2nd stage of Trial, i.e. when you start working on clients' tasks.
 
-## 1. Create an encrypted volume (host machine)
+## Encryption
 
 Due to the variety of operating systems used by our team, we do not impose a specific solution.
 It depends on what software you use.
 For Linux systems, it can be LUKS.
 For macOS, you can use built-in FileVault encryption.
 
-Due to the large space utilization of our projects, the minimum partition size is **50 GB** (recommended size:
-**100 GB**).
-
 In case you have no preferences, we recommend using [VeraCrypt](https://www.veracrypt.fr/en/Home.html).
 A step-by-step instruction for the installation process can be found [here](docs/VeraCrypt.md).
 
-It is allowed to use a non-virtual machine for work purposes (via dual boot or separate physical machine).
-This is not very common, and if you are considering setting it up, you probably don't need detailed instructions, so the rest of the guide will show how to build a VM environment.
+## Configuring your development environment
 
-## 2. Virtual machine (host machine)
+> **Note** This section applies only to Software Developer positions after the 1st stage of the Evaluation period.
 
-As with encryption software, we do not have specific requirements for what kind of solution you will use.
-The only requirement is the license.
+Follow the instructions laid out in [Development environment setup](docs/Developer_environment_setup.md).
 
-We generally recommend [VirtualBox](https://www.virtualbox.org/).
-Apple Silicon hardware support in VirtualBox is dire, so the recommended virtualization solution is currently (Q2 2023) QEMU-based, eg.
-[UTM](https://getutm.app/) (+ [guest system installation tutorial](https://www.youtube.com/watch?v=O19mv1pe76M))
-
-A step-by-step guide to creating a virtual machine can be found [here](docs/VirtualBox.md).
-
-## 3. Installing the necessary packages (virtual machine)
-
-You will need the following packages to work:
-
-```bash
-$ sudo apt install \
-	docker.io \
-	docker-compose \
-	git \
-	python3-pip \
-	python3-setuptools \
-	python3-virtualenv \
-	direnv
-```
-
-```bash
-$ sudo pip3 install virtualenvwrapper
-```
-
-## 4. Initial configuration (bash, git, ssh)
-
-### SSH
-
-First, generate an SSH key.
-We use Ed25519 which is more secure than the default RSA key.
-We provided a simple script that will do all the work for you.
-
-Just download it from this repository and run it:
-
-```bash
-$ ./configure-keychain.sh
-```
-
-### Git
-
-Copy the `.gitconfig` file included in this repository into your home directory:
-
-```bash
-$ cp .gitconfig ~/
-```
-
-Complete username and email:
-
-```bash
-$ git config --global user.name "Name Surname"
-$ git config --global user.email name.surname@reef.pl
-```
-
-### Bash
-
-Copy the `.bashrc` file into your home directory.
-
-```bash
-$ cp .bashrc ~/
-```
-
-In order for this to take effect, relog your shell or run `. .bashrc`
-
-### Docker
-
-Add your user to the `docker` group:
-
-```bash
-$ sudo gpasswd -a $USER docker
-```
-
-*Note: For ease of use, an alias \*\* dc \*\* for docker-compose is added to the `.bashrc` file.
-Instead of typing a full name, you can use the shortened version.*
-
-Example:
-
-```bash
-$ dc up
-```
-
-## 5. Configure your Google Account and GitHub
-
-Since you've already configured your virtual machine, any logon to company accounts is done through the VM.
+## Configure your Google Account and GitHub
 
 ### Enable 2-step authorization for your Google Account
 
@@ -412,8 +389,8 @@ To improve the security of our accounts, we require you to enable 2-step verific
 ### Create an account on GitHub
 
 Create a new account on GitHub.
-The suggested username is the first letter of your first name and your full last name, and the suffix `-reef`, eg.
-`jkowalski-reef` or `asmith-reef`.
+The suggested username is the same as one used in your reef email (replace dots with hyphens) with added -reef suffix, eg.
+`jan-kowalski-reef` or `adam-smith-reef`.
 
 2-step authorization should be enabled as well.
 If you don't enable it (or if you disable it - which is crazy, but technically possible), a periodic audit will catch you and you will make the auditor very sad 😭.
@@ -446,14 +423,49 @@ Therefore, we should all use clear pictures from the beginning.
 
 ## 6. Communication
 
-### 6.1 Video hand signal protocol
+### 6.1 Weekly video calls
+
+Every week, we hold two internal calls:
+Status call and a Sociocracy call.
+
+The purpose of these two calls, briefly speaking, is:
+
+- Status call - share achievements and other significant developments from previous week and make plans for next one.
+- Sociocracy call - facilitate Sociocracy 3.0 decision processes giving everyone an opportunity to influence the shape of the company.
+
+There is a second purpose of these two internal calls, and that is team building.
+These calls perform the role of a water cooler or a coffee machine in a regular office.
+That is, we make them a bit loose, with time to make jokes, add personal stories, divert from the main topic etc.
+We are a fully remote team with some members that not ever met one another in person.
+Therefor it is even more important for us to invest that extra time (and therefore money).
+All that we can get to know each other better, build trust, have fun and acknowledge that we more than "just" excellent problem solvers.
+
+During your Evaluation period you will be invited to attend and participate at least once in these calls.
+
+### 6.2 Daily Stand-ups
+
+Every day, our developers come together to synchronize on project progress and potential challenges.
+This daily stand-up follows a structured format where each participant addresses three key questions:
+
+1. What did they accomplish yesterday?
+2. What is on their agenda for today?
+3. Are there any obstacles in their way?
+
+Each team member is allocated 3 minutes to succinctly cover these three points.
+To maintain the efficiency of the stand-up, we strive to keep open discussions to a minimum.
+Any topic necessitating a longer conversation is earmarked for a separate follow-up meeting.
+
+If, for any reason, you cannot attend the daily stand-up, please notify the team in the #announcements channel on Slack.
+Additionally, post your updates there so everyone stays informed.
+
+### 6.3 Video hand signal protocol
 
 We use simple hand signals during video calls to communicate more efficiently.
 
 | sign                | meaning                      | context               |
 | ------------------- | ---------------------------- | --------------------- |
 | :fist:              | pass (no comment)            | moderated discussion  |
-| :point_up:          | request voice                | moderated discussion  |
+| :point\_up:         | request voice                | moderated discussion  |
 | :thumbsup:          | vote "consent"               | S3 decision making    |
 | hand with palm down | vote "concern"               | S3 decision making    |
 | hand with palm up   | vote "protest"               | S3 decision making    |
@@ -464,7 +476,7 @@ This way, the situation is clear at a glance.
 In the past, we used to show signs for a moment, but then the quick responders hid their signals before the slow ones started signing and the situation was not clear.
 Now we all hold the sign until we're sure of the consent.
 
-### 6.2 Communication channels
+### 6.4 Communication channels
 
 When you need to contact one of your Reef teammates, you have three channels to choose from:
 Slack, text message, and phone call.
@@ -479,7 +491,7 @@ We expect you to respect our contact preferences too.
 We don't really use email for communications, as some people don't check it too often.
 If you need to be sure that someone sees your email, ping them on Slack.
 
-### 6.3 Instant messengers
+### 6.5 Instant messengers
 
 For business communications, we use Slack and [Zoom](https://zoom.us).
 You may use them in your browser, but they are usually installed on **the host computer** for convenience.
@@ -500,6 +512,7 @@ reaction is better than writing "ok" (especially when there are many acknowledge
 If you want to quickly acknowledge a Slack message, you can use `ctrl+shift+\, 1, enter`.
 
 We use some reactions in a specific way:
+
 - 👀 to indicate "I'm looking at this" (for example on a code review request)
 - ✔️ it's DONE (as done as it possibly can be for the foreseeable future)
 
@@ -577,126 +590,32 @@ If there is a conference that you'd like to attend, and we agree that your atten
 - The company will not pay for the time spent at the conference, at the afterparty, etc.
 - ... unless you are actually going there to sell.
 
-### 7.2 Copying Code
+### 7.2 Code conventions
 
-Please follow these guidelines when copying code:
+If your role requires you to write code, please look up our [code conventions](docs/Code_conventions.md).
+They may seem obvious, and RT developers tend to follow them subconsciously, but we wrote them down to bring new devs up to speed ASAP.
 
-- Please mention the license of the source code which is copied
-
-### 7.3 Conventions
-
-We *typically* follow the conventions listed below.
-Not always.
-The list seems long, but it really isn't.
-
-Why is this list here, you may ask - don't all RT developers follow all of those subconsciously?
-Usually yes, but some of our trial candidates said it would be easier for them if they could look at the list, so we wrote it down out of respect for them.
-
-#### 1NF
-
-Described [here](https://en.wikipedia.org/wiki/First_normal_form).
-We break it when doing advanced indexing, but we adhere to 1NF until we can't get the desired result using basic indexing.
-
-#### DRY
-
-Described [here](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself).
-We adhere to it pretty closely, you won't find much of copied code in our repos (with one notable exception, it's a long story).
-
-#### SOLID
-
-Described [here](https://en.wikipedia.org/wiki/SOLID).
-We follow the first 5, not sure about the others.
-
-#### CUPID
-
-Described [here](https://dannorth.net/2022/02/10/cupid-for-joyful-coding/).
-Not as well known as the others.
-
-#### git commit message formatting
-
-Described [here](https://chris.beams.io/posts/git-commit/).
-There are many such conventions, but this is the one we use.
-It's pretty straightforward.
-
-#### Making things resilient to failures in general
-
-<https://blog.cloudflare.com/pipefail-how-a-missing-shell-option-slowed-cloudflare-down/>
-
-#### No 3.10+ only syntax for the time being
-
-Because we want an option to switch to 3.9-nogil.
-This can be dropped very easily, but please mention it beforehand.
-
-#### SemVer 2
-
-Described [here](https://semver.org/spec/v2.0.0.html)
-
-#### isort style import sorting
-
-Described [here](https://pycqa.github.io/isort/docs/configuration/custom_sections_and_ordering.html)
-
-#### Type hints
-
-Described [here](https://docs.python.org/3/library/typing.html).
-We try to use it at least for all new public functions.
-
-#### Docstrings for everything public
-
-As above - it should be possible to use stuff without reading its code.
-
-#### PEP8
-
-<https://peps.python.org/pep-0008/>
-
-#### Trailing commas on multiline statements
-
-See [here](https://stackoverflow.com/a/17492103/1935381).
-We skip it after `**kwargs` as no argument will ever follow it.
-
-#### keepachangelog
-
-<https://keepachangelog.com/>
-
-#### Safe shell settings
-
-<https://sipb.mit.edu/doc/safe-shell/>
-
-#### SemBr
-
-Use [Semantic Line Breaks](https://sembr.org/) whenever line breaks do not influence rendered document.
-
-#### Not using stuff from forbidden technology list without prior discussion
-
-See the next section
-
-### 7.4 Restricted patterns / forbidden technologies
-
-Whenever someone would like to use a pattern listed below, we have decided that they will get an opinion from a design reviewer **before** writing the code.
-The restricted technologies are:
-
-1. Django GFK (generic foreign key)
-2. Django signals (please note that `transaction.on_commit()` hook is NOT a signal)
-3. Writing to `self.__class__`
-4. `atexit.register()` (use `try: ... finally: ...` instead)
-5. Defaults for environment variables in `settings.py` (all defaults should be defined in `dev/.env.template` and `prod/.env.template`)
-6. By default, one should always use `BIGINT` for primary key field, unless there are special reasons to use other type.
-
-The reasoning behind this is that we usually prefer for the code to be structured differently and it's better to discuss this before implementation and not after.
-All of those technologies have their uses in good cases, but what we found is that often the alternative is more elegant, so in order to limit the amount of rewritten code, in those cases we choose to review the design before implementation.
-Design review is generally welcome and can save a lot of time, but in this case we have unanimously agreed it will be mandatory.
-
-See also:
-<https://github.com/reef-technologies/python-review-zoo/>
-
-### 7.5 Holidays (days off)
+### 7.3 Holidays (days off)
 
 Whenever you're taking some days off, it's important to let other team members know, so that work can be planned and client expectations managed.
 
 - You should mark days when you won't be working in GSheet ['Work planning'](https://docs.google.com/spreadsheets/d/12nQKdskWDwFHhQ01BMjfllabqJTZo4tMdCsWx6NJaL4/edit?usp=sharing) as soon as you know about it.
-- If you need time off urgently because of something unexpected, please let others know in Slack in `#annoucements` channel right away, but ignore it completely if it's a life-and-death situation.
+- Announce it on Slack in `#annoucements` channel beforehand.
+- If you need time off urgently because of something unexpected, please let the affected (people you had planned meetings with / or that need to pick up the task from you) know through Slack right away.
+  Use `#annoucements` if you are really in a hurry.
+  Ignore whole announcing thing in a life-and-death situations.
   Don't worry, we'll manage.
   Family first 👪
 - If it's some time you're planning to take off in the future, please mention that on a status call.
+- We work asynchronously, so unless someone is waiting for you, you don't need to announce it whenever you leave for 2 hours or so.
+
+### 7.4 Client and project specific documentation
+
+You won't find any client-specific documentation in this handbook.
+In general, we try to keep the client-specific documentation in the client's repository.
+The basic idea is that if a client decides to switch to another vendor, they should have all the documentation they need to do so.
+To reduce bus-factor, we keep references to these repositories along with whom to contact to get access etc in https://github.com/reef-technologies/internal-handbook .
+This repository should be first thing you look at when you are assigned to new project.
 
 ## 8. Tools
 
@@ -717,29 +636,29 @@ srm -fllz -r -v <directory>
 
 (you can skip `-r` for single file or `-v` if you don't care about verbosity - `-fllz` is the fastest possible way to run `srm` and it is safe due to encrypted drive and also modern ways of storing data in hard drives - default full *Gutmann method* is not needed)
 
-To remove the docker containers created while working on a project, please use the following command (get `dockerkill.sh` from the bin directory of this repo):
+To remove the docker resources created while working on a project, please use:
 
-```bash
-./dockerkill.sh <container-name>
+```
+docker-compose down --rmi all --remove-orphans -v
 ```
 
 # FAQ - Frequently Asked Questions
 
 ##### *What's a virtual assistant?*
 
- It's like an office manager for a company that doesn't have an office.
+It's like an office manager for a company that doesn't have an office.
 
 ##### *Do we have CI/CD?*
 
- Typically Github Actions.
+Typically Github Actions.
 
 ##### *How to re-bill my time to a different project?*
 
- In case you ever bill the time worked to the wrong project, [here](docs/Hubstaff.md) is a step-by-step guide on how to fix it.
+In case you ever bill the time worked to the wrong project, [here](docs/Hubstaff.md) is a step-by-step guide on how to fix it.
 
 ##### *Why is all communication (except 1to1) in English?*
 
- Pawel: Let me tell you a story.
+Pawel: Let me tell you a story.
 There was a Python office in Warsaw where most employees were from Poland, but eventually, the company started hiring foreigners, too.
 They could not understand the kitchen conversations, which was awkward for both sides, so a new rule was introduced.
 Everyone was supposed to switch to English as soon as a foreigner entered the room.
@@ -858,11 +777,12 @@ if __name__ == '__main__':
     ]
 
     PROJECTS = [
-        Project('sales data analysis tool for a fintech company', 'Chicago, IL'),
-        Project('paper product level tracker for toilet cleaners', 'Canada'),
-        Project('AI video content analyzer/searcher for drone pilots', 'Detroit, MI'),
-        Project('two e-commerce applications for a customer', 'Washington, DC'),
-        Project('hydrant certification report generator', 'Australian plumbers'),
+        Project('decentralized compute infrastructure layer facilitating AI-based digital commodity creation'),
+        Project('sdk for accessing a cloud storage leveraging ApiVer for long-term maintainability'),
+        Project('cost-effective solution for backing up video from thousands of live camera streams'),
+        Project('cost optimization system in telco domain'),
+        Project('a large scale scrape/search system tracking >100 million objects with 200+ fields each'),
+        ...,
     ]
 
     reef_technologies = Company(

@@ -42,20 +42,23 @@ If getting paid for learning new things every day sounds fun... You'll also enjo
   Both early birds and night owls will feel comfortable, and you can do the job from whichever timezone
 - We work full-time or 6h/day.
   There is plenty of work and a healthy demand for our services on the market, but we protect our staff from overload
-- Combining this job with other employment is fine, but only temporarily, during the trial period.
+- Combining this job with other employment is fine, but only temporarily, during the evaluation period.
   We've found it to be unsustainable in the long term
 - There are no common office hours for everyone.
   We work at the time of our choosing, tracking our hours using a tool called Hubstaff
 - We collaborate on the basis of a B2B contract or a contract of mandate (for residents of Poland)
 - So far, most of our team members are Polish, but our work and resources are in English
 
+For the most part we work independently, but we can always count on our teammates to brainstorm ideas together or bounce our research results off each other. On the other hand, we carry out many projects together, combining our strengths, preferences and talents for the best possible results. We discuss emerging difficulties with each other on an ongoing basis and share our experiences.
+
+Every quarter, we all have an online "Bring Your Own Something" meeting where we talk about current projects and plans, as well as share our ideas and inspirations. Thanks to the group decision-making framework, each team member can be sure that his or her opinion will be heard and valued.
+
 **How much can you earn?**
 
 We generally pay **40-65 PLN** (Intermediate rate) per hour and **65-85 PLN** (Senior rate) per hour (plus VAT if necessary), but we're happy to talk even if your rate is higher than that.
 Please share your expectations with us in the [application form](https://forms.gle/Cxw6B3ZPknvJfJHz9) and let's see if we can work something out.
 
-We usually adjust the hourly rates once or twice a year.
-The raises depend on the market situation, but recent rounds have seen yearly increases of \~19%.
+We usually adjust the hourly rates once a year.
 
 **Who are we and would you enjoy working with us?**
 
@@ -71,8 +74,6 @@ We also have major plant growers and film fans among us.
 
 We are beautifully and respectfully different from each other and know how to talk about these differences in a peaceful way.
 We work with a human-centered approach - we see each other as important and cultivate a culture of speaking up, giving (wanted) feedback, and building an atmosphere without unnecessary tension.
-
-We usually work independently, but we can always count on our teammates to brainstorm ideas together or bounce our research results off each other.
 
 There’s one thing we all agree on:
 the client's satisfaction is at the core of our work.
