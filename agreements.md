@@ -45,9 +45,9 @@ This is an agreed upon gentle reminder, that carries no criticism or hard feelin
 
 2. Other team members may react to the message in the following ways:
 
-- 👎 (`:thumbsdown:`) downvote emoji – “I am busy and cannot help you right now”,
+- 👋 (`:wave:`) – “I cannot help you right now”,
 - 👀 (`:eyes:`) – “I am reviewing your code now”,
-- ✅ (`:white_check_mark:`) – “I have reviewed your code”,
+- ✅ (`:white_check_mark:`) – “I have reviewed your code” (warning: it only means "review is ready to be read" and NOT "ready to be merged"),
 - 🔒 (`:lock:`) – “I don't have permission to access this project”.
 
 Developers should also take into consideration the following rules:
@@ -58,9 +58,25 @@ Developers should also take into consideration the following rules:
 - Only one developer should perform a code review for each code snippet posted to the `#review` channel.
   Therefore, if someone has already posted the eyes emoji, other staff members should ignore the post and carry on with their work.
 - Any team member may review any post – there is no preference as to who should do that.
+- If your PR wasn't marked with 👀 or ✅ before daily standup, you must pick Code Reviewer during the daily.
 - Each post is a separate review round, so any developer may respond, even if they did not review the previous iterations.
 - It is recommendable for different developers to look at the subsequent iterations of the same code, as it may help catch bugs or look at the code differently.
 - If a staff member realizes that everyone has refused to review a post, they should escalate the issue and discuss it with the team.
+- The Author of the PR must take all Code Review comments into consideration, but as a Senior Engineer, they are expected to make a decision on how to address them. 
+- Reviewer MAY use https://conventionalcomments.org/ for clarity which comments are blocking or should be treated differently.
+
+## Alerts channels
+
+The various "alerts" channels receive issue messages from running deployments.
+In order to prevent alert blidness, each time new alert message appears it should be reacted to, i.e. resolved or silenced. 
+Each channel has assigned people (in the monkey registry) resposible for checking alerts appearing in them at least once per their workday. 
+
+Similarly to the code review channel, when reviewing an alert please following emoji reactions:
+- 👀 (`:eyes:`) – “I am looking at this right now”,
+- ✅ (`:white_check_mark:`) – “Issue resolved”,
+
+Staff members should to periodically skim through the alerts channels and do a quick checkup on their state.
+It should be easy to spot channels that are neglected, i.e. without any reactions or just 👀, but no resolutions.
 
 ## Maintaining organizational culture
 
@@ -75,6 +91,24 @@ how we deal with challenges, solve problems, and make decisions.
 
 As new members spend more time at the company, they may come up with their own stories to tell… which will be read by a yet newer member in the future.
 The cycle continues, and we all gain a better understanding of the values we want this company to present.
+
+## HR Circle
+
+At any organization, sensitive and critical HR decisions sometimes need to be made with privacy, care, and discretion.
+To handle these complex matters in Reef Technologies, we have established a HR Circle - a sub-group within the wider "root" Sociocracy circle, staffed by those few of us who have the necessary level of experience to not just do the right thing, but to do it the right way.
+
+The HR Circle is endowed with specific authorities:
+
+- **Termination of Staff Members**:
+  The HR Circle has the authority to terminate any staff member at its sole discretion, with the exception of the Sociocracy Circle members, unless special conditions apply.
+- **Termination of Sociocracy Circle Members**:
+  The HR Circle may also terminate a Sociocracy Circle member, but only in urgent situations, such as sabotage, theft, gross violation of the terms of legal agreement etc.
+  The decision must be explained to the Sociocracy Circle afterward.
+
+### Notes:
+
+- While the Sociocracy Circle does not need to be involved in the decision-making process for terminating a staff member, the HR Circle may consult with them if there is uncertainty or concern about potential reactions.
+- If a Sociocracy Circle member's (non-urgent) termination is being considered, they are allowed to be present in the discussion.
 
 ## Bug zoo
 
@@ -144,87 +178,54 @@ This solution is meant to allow the team to auto-calibrate and recognize what co
 If the offensive comment is seen as severe and above the grade of this agreement, it will be raised to the HR circle to decide on further steps.
 Fortunately, so far, there have been no such situations.
 
+## Constructive feedback
+
+We aim to maintain a positive work environment where feedback is given constructively to promote improvement.
+To manage situations where feedback may seem nonconstructive, we will use the following procedure:
+
+- If someone feels that feedback is overly negative or aggressive towards any staff member, they should say:
+  “Could you please rephrase your concern in a more constructive way?”
+- The person who provided the feedback should then respond with:
+  “Sorry” and rephrase their feedback in a more constructive manner.
+- We take a brief moment to reflect on the request and response, then continue with the discussion.
+
+### Example 1
+
+- Person A: “This solution is crap. I can break it in one day!”
+- Person B: “I don't understand. Could you please rephrase your concern in a more constructive way?”
+- Person A: “Sorry. I am worried this design has some vulnerabilities that someone could exploit. How can we make sure that this does not happen?”
+
+### Example 2
+
+- Person A: “This is obvious. Anybody above the age of 6 knows this!”
+- Person C: “Hey, Person B put some work into this. Could you rephrase your feedback in a more constructive way?”
+- Person A: “Sorry. My concern here is that we should write only things that are not obvious and not generic. Otherwise, this won't provide much value.”
+
 ## Audio/video processing in Zoom calls
 
-It is not allowed to use audio or video processing in company Zoom calls.
-The only exception to this rule is the active noise cancellation function, which staff members may use freely.
+Using audio or video processing in company Zoom calls is generally not allowed,
+with the following exceptions:
 
-## Hardware co-funding
+1. Active noise cancellation.
+2. Blurred backgrounds.
 
-All staff members of Reef Technologies have the right to request co-funding for up to 50% of the value of hardware deemed necessary for work, such as a laptop, a headset, a monitor, a mouse, a keyboard, etc.
+This policy aims to minimize distractions during calls.
+We've observed that certain video effects, especially those used without a green screen or with loose hair, can cause flickering and partially obscure participants' faces.
 
-Co-funding conditions for senior engineers:
+## Equipment co-funding
 
-- up to 50% of the value of the hardware up to $1536 net per two years.
+See the new [Equipment Funding Policy](https://github.com/reef-technologies/handbook/blob/master/equipment_funding.md)
 
-Co-funding conditions for everyone else:
+## LLM tool use & funding
 
-- up to 50% of the value of the hardware up to $512 net per two years.
+Each Reef Technologies senior staff member is eligible to receive company-funded LLM service subscription (e.g. GitHub Copilot, ChatGPT Plus).
+The subscription is paid by Reef Technologies for entire time it is being used it for any tasks related to Reef Technologies projects.
+Please make sure the subscription is terminated if you don't need it anymore to prevent license waste.
 
-The reason for this difference is that software engineering generally requires significantly more computing power than other types of tasks.
-
-Two years of full-time work is equivalent to 2568 hours.
-
-All tracked hours count, it doesn’t matter whether the staff member logged them to a commercial project or an internal project such as our Sociocracy or Weekly Status calls.
-
-The hours are calculated as per the number of hours tracked in the Hubstaff time tracker.
-Staff members may request to be informed of their current hour total by a virtual assistant.
-
-A Reef Technologies member who requests co-funding for hardware they need to perform their work will be sent the equipment by the company.
-
-The hardware is bought by Reef Technologies and belongs to the company until its value has decreased either by 50% or by the maximum co-funding value ($1536 or $512).
-
-In reality, the benefit of using this policy amounts to more than 50% of the hardware's original value.
-By the time you purchase it from Reef Technologies, you will be charging a higher hourly rate and inflation will have likely further devalued the amount you need to pay for the hardware.
-All that after getting to use some nice gear at no immediate cost in the meantime.
-
-After the value of the hardware meets one of the two conditions, the staff member gains ownership by purchasing the hardware from Reef Technologies at its current price (50% of the initial price or initial price less maximum co-funding value).
-
-The hardware is never returned to Reef Technologies.
-In all cases, it remains with the individual.
-
-If a staff member on trial period requests hardware assistance, they will be assigned the company hardware that is currently available.
-After the trial period, the staff member is welcome to use the co-funding policy to buy the hardware of their own choice.
-
-The hardware will belong to Reef Technologies until its value has decreased either by 50% or by the maximum co-funding value ($1536 or $512).
-
-### Example situation 1:
-
-John works for Reef Technologies as a Senior Python Engineer.
-When he first joined the company, he requested to be supplied with a laptop that cost $3000. Reef Technologies purchased it and had it delivered to John.
-
-After about two years, the assistant tasked with tracking the value of Reef Technologies hardware noticed that the average value of a two-year-old used laptop that John has been using has fallen to $1500 – 50% of the initial price of $3000.
-
-At this point, John was issued an invoice by Reef Technologies to pay $1500 in order to purchase the laptop.
-John paid the $1500 and the ownership of the laptop passed on to him.
-
-### Example situation 2:
-
-Patrick works for Reef Technologies as a Remote Executive Assistant.
-When he first joined the company, he requested to be supplied with a laptop that cost $800. Reef Technologies purchased it and had it delivered to Patrick.
-
-A few months in, Patrick realized he also needed a vertical mouse and requested for Reef Technologies to get him one at the cost of $100.
-
-Patrick could do that because:
-
-- the co-founding value for a laptop that costs $800 is $400
-- the maximum co-founding value that a Remote Executive Assistant can receive is $512 per two years
-- Patrick still has $112 of co-founding value available at this point in time
-- the co-founding value of a mouse that costs $100 is $50, which is less than $112
-
-After about a year, the assistant tasked with tracking the value of Reef Technologies hardware noticed that the average value of a one-year-old used laptop that Patrick has been using has fallen to $400 – 50% of the initial price of $800.
-
-At this point, Patrick was issued an invoice by Reef Technologies to pay $400 in order to purchase the laptop.
-Patrick paid the $400 and the ownership of the laptop passed on to him.
-
-A year later, the value of the mouse was down to $50, so Patrick was issued an invoice by Reef Technologies to pay $50 in order to purchase the mouse as well.
-Patrick paid the $50 and became the owner of the mouse.
-
-Two years already passed since Patrick had first requested to get a laptop.
-Thus, his available co-founding value returned to the original value of $512.
-
-As a senior Reef Technologies engineer, you are eligible to use the services of a personal assistant.
-The assistant may do the necessary research, make a list of top hardware models for you to choose from, find a good online shop that is available in your country and have the appropriate equipment delivered to your address.
+Please note, while our default contract with clients allows use of LLMs, make sure to check with a project manager before using LLM on any particular project.
+As of mid 2023 every client has approved LLMs except one that is still considering it.
+As for work done for Reef Technologies internal projects, you are free to use LLMs as you see fit.
+In all cases you are responsible for quality of your work, regardless if LLM was used to produce it or not.
 
 ## Training and upskilling
 
@@ -279,6 +280,24 @@ Even if CEO will be against the expense, he'll absorb the cost rather than see y
 
 Reef Technologies pays only for the time which is tracked by company's time tracker.
 
+## Absence notice periods
+
+We empower our staff to manage their working schedule and allow flexibility.
+With great power comes great responsibility.
+If you want to take some time off, please remember that it is very important respect others and give them a reasonable notice period to manage any hand-offs.
+The sooner you inform others about any planned absence the better for the team.
+
+## Billable online team-building activities
+
+We recognize the importance of team building, especially in a remote work environment.
+To foster stronger connections among our staff, we've implemented the following policy:
+
+- Each staff member can bill up to 4 hours of billable time for online team-building activities each month.
+- These include online games, learning together or other non-work-related team activities.
+- The time needs to be tracked via Hubstaff under the `BAC / remote team building` project.
+
+This policy aims to create opportunities for informal interaction and relationship-building among team members, which we believe contributes to a better work environment.
+
 ## Referral fee $2048 for Senior Python Developer
 
-"If you as the staff member has contacted us with a potential candidate who passed the trial period and tracked at least 168h work later, referral fee will be paid for you - $2048".
+"If you as the staff member has contacted us with a potential candidate who passed the evaluation period and tracked at least 168h work later, referral fee will be paid for you - $2048".

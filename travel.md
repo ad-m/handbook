@@ -62,6 +62,11 @@
 - for multi-day conferences the target venue itself (often a hotel) is usually the best option (reduces logistics a lot etc).
   Book it early because it sells faster than the conference tickets do.
 
+### Fire safety 🔥
+
+- never ignore a fire alarm and get out as quickly as possible. Fire spreads extremely quickly, every second counts:
+  - <https://www.youtube.com/watch?v=piofZLySsNc> - A small fire completely engulfs a room in 2 min 30 sec
+
 ### Organization
 
 - if going with other people from the team (not necessarily the company), try to book everyone into the same hotel, it has a few advantages:
@@ -97,11 +102,6 @@ abgh
 
 ## Destinations
 
-### Asia in general
-
-- always use a surge protector for your laptop power supply, otherwise you'll burn it fairly quickly
-- recommended surge protector is <https://www.belkin.com/de/chargers/surge-protectors/surgecube-1-outlet-surge-protector-with-2-x-2-4a-shared-usb-charging/p/p-bsv103/> or <https://www.belkin.com/fr/chargers/surge-protectors/surgecube-1-outlet-surge-protector-with-2-x-2-4a-shared-usb-charging/p/p-bsv103/> + grounded(!) converter from the local (usually US) wall plug
-
 ### Serbia
 
 - they only accept local currency there.
@@ -115,7 +115,12 @@ abgh
   UPDATE:
   government has made it illegal...
 
-### Thailand
+### Asia in general
+
+- always use a surge protector for your laptop power supply, otherwise you'll burn it fairly quickly
+- recommended surge protector is <https://www.belkin.com/de/chargers/surge-protectors/surgecube-1-outlet-surge-protector-with-2-x-2-4a-shared-usb-charging/p/p-bsv103/> or <https://www.belkin.com/fr/chargers/surge-protectors/surgecube-1-outlet-surge-protector-with-2-x-2-4a-shared-usb-charging/p/p-bsv103/> + grounded(!) converter from the local (usually US) wall plug
+
+#### Thailand
 
 - bring USD cash (watch per-person limit of transfer without declaration in origin, destination and transit countries!), exchange it in Yellow Bank (Kungsri) for best rate
 - get a car, not a motorbike.
